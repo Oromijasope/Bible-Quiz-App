@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_350sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:background="#003366"
+    android:layout_gravity="center"
+    android:layout_height="@dimen/_150sdp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:gravity="center"
+        android:background="#003366"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+        <!--  Resume -->
+        <LinearLayout
+            android:id="@+id/resumeButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/round_back_grey"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_100sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_17sdp"
+                app:srcCompat="@drawable/play_icon" />
+
+
+        </LinearLayout>
+
+        <!--  Home -->
+        <LinearLayout
+            android:id="@+id/homeButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/round_back_grey"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_200sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_17sdp"
+                app:srcCompat="@drawable/home_button" />
+
+
+
+        </LinearLayout>
+
+        <!--  Exit -->
+        <LinearLayout
+            android:id="@+id/exitButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/round_back_grey"
+           android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_17sdp"
+                app:srcCompat="@drawable/quit_button" />
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

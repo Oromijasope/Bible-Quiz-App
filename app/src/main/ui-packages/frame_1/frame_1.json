@@ -1,0 +1,119 @@
+{
+  "name": "frame_1",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "aQsoVMFPpysGbJaxhu6sgc",
+    "node": "22:47",
+    "version": "3005973381",
+    "component-id": "d824504fdbfb855ec8fe47fd7fbd8655720d3196"
+  },
+  "default": "Frame 1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Transition"
+      },
+      {
+        "type": "text",
+        "id": "Bible Quiz"
+      }
+    ],
+    "modes": {
+      "Frame 1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Transition",
+              "Bible Quiz"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            }
+          },
+          {
+            "id": "Transition",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "6.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "242.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "228.0"
+              }
+            },
+            "vector-content": "transition.svg"
+          },
+          {
+            "id": "Bible Quiz",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "1.0"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$Bible Quiz text content",
+            "overflow": "visible",
+            "text-size": "40.0",
+            "line-height": "1.2197265625",
+            "typeface": "Impact"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Bible Quiz text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 1",
+      "size": {
+        "width": 385.0,
+        "height": 800.0
+      },
+      "parameters": {
+        "Bible Quiz text content": "Bible Quiz\n"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

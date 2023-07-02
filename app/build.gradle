@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+
+
+}
+
+apply plugin: 'kotlin-android'
+
+
+
+
+
+android {
+    namespace 'com.example.quiz'
+    compileSdk 33
+
+    buildFeatures {
+        compose true
+    }
+
+    sourceSets {
+        main {
+            assets {
+                srcDir('src/main/ui-packages')
+            }
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.quiz"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+    implementation 'com.github.mckrpk:AnimatedProgressBar:0.1.0'
+    implementation 'androidx.compose.material:material:1.4.0'
+    implementation 'androidx.compose.compiler:compiler:1.4.4'
+    implementation 'androidx.annotation:annotation:1.5.0' // never upgrade
+    implementation 'jp.wasabeef:blurry:4.0.0'
+    implementation 'com.google.firebase:firebase-common:20.3.2'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.5'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.airbnb.android:lottie:4.2.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    debugImplementation 'androidx.compose.ui:ui-tooling:1.4.0'
+}
